@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ElViewKit",
+        "repositoryURL": "https://github.com/jaesung-wwdc/ElViewKit",
+        "state": {
+          "branch": "master",
+          "revision": "a1ed9fe303e07c1892e22696e86de8cc7338d602",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
