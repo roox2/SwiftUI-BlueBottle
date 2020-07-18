@@ -10,13 +10,13 @@ List를 사용해서 카페음료들을 보여주는 뷰 만들기
 
 List의 아이템을 탭 했을 때 선택된 음료의 정보를 보여주는 뷰를 Animation을 적용하여 보여주기
 
-[![Day3](https://img.shields.io/badge/Day3-Detail_View_&_animation-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/roox2/SwiftUI-Day3-BlueBottle-Animation)
+[![Day3](https://img.shields.io/badge/Day3-Tap_gesture_with_animation-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/roox2/SwiftUI-Day3-BlueBottle-Animation)
 
 ### Day4
 
 ScrollView를 사용해서 선택된 음료의 정보를 보여주는 DetailView 만들기
 
-[![Day4](https://img.shields.io/badge/Day4-Detail_View_&_scroll_view-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/roox2/SwiftUI-Day4-BlueBottle-DetailScrollView)
+[![Day4](https://img.shields.io/badge/Day4-Detail_View_with_scroll_view-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://github.com/roox2/SwiftUI-Day4-BlueBottle-DetailScrollView)
 
 ### Day5
 
