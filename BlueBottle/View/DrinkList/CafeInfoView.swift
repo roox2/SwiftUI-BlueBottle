@@ -19,7 +19,7 @@ struct CafeInfoView: View {
                 Text("California Street")
                     .font(.title)
                 
-                Image(systemName: "arrow.down")
+                Image(systemName: "chevron.down")
                     .foregroundColor(.blue)
             }
             
@@ -41,7 +41,7 @@ struct CafeInfoView: View {
                     }
                 }
             }
-            .padding(.all, 12)
+            .padding(.all, 2)
         }
     }
 }

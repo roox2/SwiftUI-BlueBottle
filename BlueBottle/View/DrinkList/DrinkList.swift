@@ -18,15 +18,19 @@ struct DrinkList: View {
             VStack {
                 CafeInfoView(drinks: $drinks)
                     .padding(.top, 16)
-                
-                List(drinks) { drink in
-                    DrinkRow(drink: drink)
-                        .onTapGesture {
-                            self.drink = drink
-                            withAnimation {
-                                isShowingDetail = true
-                            }
+                ScrollView {
+                    LazyVStack {
+                        ForEach(drinks) { drink in
+                            DrinkRow(drink: drink)
+                                .onTapGesture {
+                                    self.drink = drink
+                                    withAnimation {
+                                        isShowingDetail = true
+                                    }
+                                }
                         }
+                    }
+                    .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 }
             }
             

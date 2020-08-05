@@ -67,8 +67,15 @@ struct DrinkDetail: View {
                     Image(systemName: "x.circle.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 36, height: 36)
+                        .frame(width: 28, height: 28)
                         .padding(.trailing, 20)
+                        .background(
+                            Color.white
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(14)
+                                .offset(x: -10, y: 0)
+                                
+                        )
                         .onTapGesture {
                             withAnimation {
                                 isShown = false
@@ -78,7 +85,20 @@ struct DrinkDetail: View {
                 
                 Spacer()
                 
-                Spacer()
+                Color(drink.available ? .systemBlue : .systemGroupedBackground)
+                    .edgesIgnoringSafeArea(.bottom)
+                    .frame(height: 80)
+                    .overlay(
+                        VStack {
+                            Text("Add Item")
+                                .font(Font.body.smallCaps())
+                                .foregroundColor(drink.available ? .white : .gray)
+                            
+                            Text("$ " + drink.price)
+                                .font(Font.body)
+                                .foregroundColor(drink.available ? .white : .gray)
+                        }
+                    )
             }
         }
     }

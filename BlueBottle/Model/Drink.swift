@@ -24,8 +24,11 @@ struct Drink: Identifiable {
     let description: String
     let preparation: String
     let calories: String
+    let price: String
     
     let category: Category
+    
+    var available = true
     
     // 많이 쓰이는 형태
     static func fetchDrinks() -> [Drink] {
@@ -36,7 +39,9 @@ struct Drink: Identifiable {
                   description: "Our cappuccino is made in the modern style, balancing our full-bodied espresso with velvety steamed milk-not the stiff foam cap of yore. In specialty coffee circles this newer style is sometimes called a “flat white.” But we consider it the new cappuccino standard.",
                   preparation: "Espresso",
                   calories: "45 - 140",
-                  category: .espresso),
+                  price: "5",
+                  category: .espresso
+            ),
             
             Drink(name: "Caffè Latte",
                   subtitle: "Espresso sweetened with a long pure of steamed milk",
@@ -44,6 +49,7 @@ struct Drink: Identifiable {
                   description: "One of our most popular drinks, our latte turns our assertive, chocolatey Hayes Valley Espresso velvety-sweet with a long pour of densely steamed milk.",
                   preparation: "Espresso",
                   calories: "100 - 230",
+                  price: "5.25",
                   category: .espresso),
             
             Drink(name: "Gibraltar",
@@ -52,7 +58,9 @@ struct Drink: Identifiable {
                   description: "A Blue Bottle original, our Gibraltar is named for the beveled glass in which it’s served. An espresso topped off with steamed milk, our version of a Spanish cortado is built for immediate quaffing.",
                   preparation: "Espresso",
                   calories: "40 - 80",
-                  category: .espresso),
+                  price: "4.25",
+                  category: .espresso,
+                  available: false),
             
             Drink(name: "Caffè Mocha",
                   subtitle: "Espresso with steamed milk and chocolate ganache",
@@ -60,6 +68,7 @@ struct Drink: Identifiable {
                   description: "The tradition of combining coffee, coffee, chocolate, and milk or cream dates back to eighteenth-century Turin’s Caffè al Bicerin. We source our chocolate from local purveyors, a different one in each city.",
                   preparation: "Espresso",
                   calories: "210 - 360",
+                  price: "6.25",
                   category: .espresso),
             
             Drink(name: "Shakerato",
@@ -68,6 +77,7 @@ struct Drink: Identifiable {
                   description: "A spin on a classic Italian iced-coffee treat, our seasonal shakerato contains espresso and milk lightly sweetened with earthy-sweet muscovado sugar, hand-shaken over ice until chilled and frothy.",
                   preparation: "Espresso",
                   calories: "60 - 160",
+                  price: "6.50",
                   category: .espresso),
             
             Drink(name: "Americano",
@@ -76,6 +86,7 @@ struct Drink: Identifiable {
                   description: "Similar in strength to a pour over, our Americano also boasts the rich flavor of our bold, ristretto-style espresso.",
                   preparation: "Espresso",
                   calories: "0 - 70",
+                  price: "3.50",
                   category: .espresso),
             
             Drink(name: "New Orleans-Style Iced Coffee",
@@ -84,6 +95,7 @@ struct Drink: Identifiable {
                   description: "New Orleans-style Iced Coffee is a sweet, creamy, decadent iced coffee that’s cold-brewed with roasted chicory, then cut with your choice of milk and cane sugar.",
                   preparation: "Cold Brew",
                   calories: "60 -120",
+                  price: "5",
                   category: .feature),
             
             Drink(name: "Single Origin Cold Brew Can",
@@ -92,6 +104,7 @@ struct Drink: Identifiable {
                   description: "This Colombia single origin forms the backbone of our cafes’ espresso. When cold-brewed over many hours, this sippable coffee shines alone.",
                   preparation: "",
                   calories: "0",
+                  price: "4",
                   category: .coldbrew),
         ]
     }
